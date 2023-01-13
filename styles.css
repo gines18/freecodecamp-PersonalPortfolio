@@ -12,12 +12,6 @@ body{
   --red: red;
   --lynch: #6B8996;
 }
-  
-  /* @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
 
 /* navbar */
 
@@ -54,7 +48,7 @@ body{
     text-decoration: none;
     color: var(--white);
     font-size: 1.5rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman',     serif;
   }
 
   .nav-bar li a:hover{
@@ -62,12 +56,11 @@ body{
   }
 
   /* welcome section */
-
 #welcome-section{
 display: flex;
 position: absolute;
 width: 100%;
-height: 100vh;
+height: 130vh;
 background-color: #28272A;
 justify-content: center;
 align-items: center;
@@ -87,12 +80,14 @@ align-items: center;
     margin: 0;
   }
 
+
+
    /* Projects */
 #projects{
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   background-color: var(--red);
   position: relative;
@@ -133,37 +128,37 @@ grid-area: one;
 height: 200px;
 background-size: cover;
 background-position: center;
-background-image: url(/img/gym.jpeg);
+background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/gym.jpeg?raw=true);
 }
 .two{
   grid-area: two;
   background-size: cover;
   background-position: center;
-  background-image: url(/img/hair.jpeg);
+  background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/hair.jpeg?raw=true);
   }
   .three{
     grid-area: three;
     height: 200px;
-    background-image: url(/img/pilot.jpeg);
+    background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/pilot.jpeg?raw=true);
     background-size: cover;
     background-position: center;
     }
     .four{
       height: 200px;
       grid-area: four;
-      background-image: url(/img/restaurant.jpeg);
+      background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/restaurant.jpeg?raw=true);
       background-size: cover;
     background-position: center;
       }
       .five{
         grid-area: five;
-        background-image: url(/img/socialmedia.jpeg);
+        background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/socialmedia.jpeg?raw=true);
         background-size: cover;
     background-position: center;
         }
         .six{
           grid-area: six;
-          background-image: url(/img/travel.jpeg);
+          background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/travel.jpeg?raw=true);
           background-size: cover;
           background-position: center;
           }
@@ -194,7 +189,7 @@ background-image: url(/img/gym.jpeg);
   display: flex;
   justify-content: center;
   display: block;
-  top: 930px;
+  top: 900px;
   width: 100%;
   height: 50vh;
   background-color: black;
@@ -274,9 +269,57 @@ width: 100%;
 background-color: #839A9B;
 height: 70px;
 z-index: 9;
-color: white;
+color: var(--white);
 top: 900px;
 }
 
-h4
-{color: black;}
+h4{
+  color: black;
+}
+
+  @media only screen and (max-width: 850px) {
+.project-introduction p{
+color: black;
+font-size: 3rem;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 150px 150px;
+  height: 200px;
+  gap: 10px;
+
+ grid-template-areas:  
+  "one two "
+  "four five"
+  "three six"
+  ;
+}
+
+  }
+
+  @media only screen and (max-width: 614px){
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px
+ grid-template-areas:  
+  "one "
+  "four "
+  "three"
+  "two"
+  "five"
+  "six"
+  ;
+}
+
+.project-introduction p{
+  color: black;
+  font-size: 2rem;
+  }
+
+  }
+

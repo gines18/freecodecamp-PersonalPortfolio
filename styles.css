@@ -80,8 +80,6 @@ align-items: center;
     margin: 0;
   }
 
-
-
    /* Projects */
 #projects{
   display: flex;
@@ -108,6 +106,7 @@ align-items: center;
   font-size: 4rem;
   color: var(--white);
 }
+
    /* grid gallery */
 .container{
   display: grid;
@@ -128,37 +127,41 @@ grid-area: one;
 height: 200px;
 background-size: cover;
 background-position: center;
-background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/gym.jpeg?raw=true);
+
+background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/gym.jpeg?raw=true) blue;
 }
 .two{
   grid-area: two;
   background-size: cover;
   background-position: center;
-  background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/hair.jpeg?raw=true);
+ 
+  background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/hair.jpeg?raw=true) blue;
   }
   .three{
     grid-area: three;
     height: 200px;
-    background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/pilot.jpeg?raw=true);
+    background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/pilot.jpeg?raw=true) blue;
     background-size: cover;
     background-position: center;
+ 
     }
     .four{
       height: 200px;
       grid-area: four;
-      background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/restaurant.jpeg?raw=true);
+      background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/restaurant.jpeg?raw=true) blue;
       background-size: cover;
     background-position: center;
+   
       }
       .five{
         grid-area: five;
-        background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/socialmedia.jpeg?raw=true);
+        background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/socialmedia.jpeg?raw=true) blue;
         background-size: cover;
     background-position: center;
         }
         .six{
           grid-area: six;
-          background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/travel.jpeg?raw=true);
+          background-image: url(https://github.com/gines18/freecodecamp-PersonalPortfolio/blob/main/img/travel.jpeg?raw=true) blue;
           background-size: cover;
           background-position: center;
           }
@@ -205,8 +208,6 @@ align-items: center;
 top: 100px;
 height: 15vh;
 
-
-
 }
 h3{
   display: flex;
@@ -228,6 +229,7 @@ width: 100%;
 height: 200px;
 
 }
+
 .container2 img{
 display: flex;
 flex-direction: row;
@@ -235,6 +237,7 @@ position: relative;
 height: 90px;
  animation: wiggle 2s linear infinite;
 }
+
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -280,46 +283,49 @@ h4{
   @media only screen and (max-width: 850px) {
 .project-introduction p{
 color: black;
+font-size: 2.1rem;
+}
+.container2 img{
+  height: 40px;
+}
+
+.contact-title h3 {
 font-size: 3rem;
 }
+  }
 
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 150px 150px;
-  height: 200px;
-  gap: 10px;
-
- grid-template-areas:  
-  "one two "
-  "four five"
-  "three six"
-  ;
+  @media only screen and (max-width: 500px) {
+    .project-introduction p{
+color: black;
+font-size: 2rem;
+}
+.container2 img{
+  height: 30px;
 }
 
-  }
-
-  @media only screen and (max-width: 614px){
-.container{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  gap: 10px
- grid-template-areas:  
-  "one "
-  "four "
-  "three"
-  "two"
-  "five"
-  "six"
-  ;
+.contact-title h3 {
+font-size: 2rem;
 }
 
-.project-introduction p{
-  color: black;
-  font-size: 2rem;
+.welcome h1{
+  font-size: 1rem;
+}
+.welcome p{
+  font-size: 1rem;
+}
   }
 
+  @media only screen and (max-width: 500px){
+.contact-title p {
+font-size: 1rem;
+}
   }
 
+  @media only screen and (max-width: 290px){
+    .contact-title h3 {
+font-size: 1.5rem;
+}
+.contact-title p {
+font-size: .8rem;
+}
+  }
